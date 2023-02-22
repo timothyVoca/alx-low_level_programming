@@ -2,9 +2,8 @@
 #include <unistd.h>
 
 /**
- *main - Entry point
- *Return: Always 1
- *
+ * main - entry point
+ * Return: 1
  */
 
 int main(void)
