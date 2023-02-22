@@ -1,4 +1,4 @@
-nclude <stdio.h>
+#include <stdio.h>
 
 /**
  *main - print lowercase alpha a-z but remove 'q' and 'e'
@@ -18,6 +18,6 @@ int main(void)
 		alpha++;
 	}
 	putchar('\n');
-	
+
 	return (0);
 }
