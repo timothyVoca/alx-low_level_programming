@@ -12,6 +12,7 @@ char *_strcat(char *dest, char *src)
 	int c, c2;
 
 	c = 0;
+
 	/*find the size of dest arrays*/
 	while (dest[c])
 		c++;
