@@ -20,11 +20,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t a;
 	ssize_t t;
 
-	fd = open(filename, O_RDONLY);
+	df = open(filename, O_RDONLY);
 	if (df == -1)
 		return (0);
 	buf = malloc(sizeof(char) * letters);
-	t = read(fd, buf, letters);
+	t = read(df, buf, letters);
 	a = write(STDOUT_FILENO, buf, t);
 	/**
 	 * Please ensure you read this files
