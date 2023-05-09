@@ -1,21 +1,25 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 char *create_buffer(char *file);
 void close_file(int fd);
 
 /**
- * create_buffer - Allocates 1024 bytes for a buffer.
- * @file: The name of the file buffer is storing chars for.
+ * create_buffer - Allocates 1024 bytes for a buffer presented.
+ * @file: The name of file buffer is storing chars for (details here).
  *
- * Return: A pointer to the newly-allocated buffer.
+ * Return: *pointer to newly-allocated buffer to be used
  */
 
 char *create_buffer(char *file)
 {
 	char *buffer;
 
+	/**
+	 * honestly, We need more information on the operations here
+	 * Some of the content need to be applied to other projects
+	 */
 	buffer = malloc(sizeof(char) * 1024);
 
 	if (buffer == NULL)
@@ -31,7 +35,7 @@ char *create_buffer(char *file)
 
 /**
  * close_file - Closes file descriptors.
- * @fd: The file descriptor to be closed.
+ * @fd: descriptor file that wil be closed .
  */
 
 void close_file(int fd)
